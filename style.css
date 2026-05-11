@@ -1,0 +1,108 @@
+:root {
+  --space-black: #05070a;
+  --star-blue: #4cc9f0;
+  --deep-purple: #1a1b26;
+  --accent-pink: #f72585;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, sans-serif;
+  background-color: var(--space-black);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(to right, #fff, var(--star-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.card {
+  background: rgba(26, 27, 38, 0.8);
+  border: 1px solid rgba(76, 201, 240, 0.3);
+  padding: 30px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--star-blue);
+  box-shadow: 0 0 20px rgba(76, 201, 240, 0.2);
+}
+
+.badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.public {
+  background: #4caf50;
+}
+.protected {
+  background: var(--accent-pink);
+}
+
+.btn-docs {
+  background: var(--star-blue);
+  color: var(--space-black);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
